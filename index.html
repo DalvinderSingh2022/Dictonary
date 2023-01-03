@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictonary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dictionary App</h1>
+        <input onkeypress="handle(event)" type="text" class="search-field" placeholder="Type any word ">
+
+        <div class="result">
+            <h1 class="word"></h1>
+            <p class="pronunce"></p>
+            <audio src="" controls></audio>
+            <p class="bold">Meaning</p>
+            <p class="definition"></p>
+            <p class="bold">Synonyms</p>
+            <div class="synonyms"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

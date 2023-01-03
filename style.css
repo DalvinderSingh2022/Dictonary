@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #91009e66;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #5a0062ad;
+    overflow: hidden;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 48px;
+    margin-bottom: 12px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.search-field {
+    padding: 10px 16px;
+    font-size: 18px;
+    color: #1e1e1e;
+    border-radius: 8px;
+    border: none;
+    border-left: 6px solid #91009e66;
+    outline: none;
+    width: 380px;
+}
+
+.result {
+    display: none;
+    margin-top: 20px;
+    width: 520px;
+    height: 400px;
+    border-radius: 12px;
+    padding: 20px;
+    overflow-y: scroll;
+    background: #fff;
+    border-left: 6px solid #91009e66;
+}
+
+.result>h1 {
+    font-size: 40px;
+    font-weight: 300;
+    display: inline;
+    text-transform: capitalize;
+    color: #000;
+    margin: 0 8px;
+}
+
+.result>p {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.pronunce {
+    display: inline-block;
+    padding: 2px 12px;
+    border-radius: 52px;
+    background: #5a0062ad;
+    color: #fff;
+}
+
+.result>audio {
+    display: block;
+    width: 100%;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.synonyms {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 50px;
+    background: #5a0062ad;
+    font-weight: 400;
+    margin: 5px 8px 5px 0;
+    color: #fff;
+}
+
+@media only screen and (max-width:600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .search-field,
+    .result {
+        width: 100%;
+    }
+}
